@@ -50,7 +50,7 @@ public ModelAndView debit(UserEntry user) {
 	long amount= user.getAmount();
 	user=dao.findById(user.getAccountNumber()).orElse(new UserEntry());
 	user.setData(-amount);
-	user.setBalance(user.getBalance()+amount);
+	user.setBalance(user.getBalance()-amount);
 	dao.save(user); 
 	mav.addObject("useor", user);
 	return mav;
