@@ -5,6 +5,7 @@
 <p>c-credit d-debit </p><br>
 name : ${usero.name}<br>
 account Number: ${usero.accountNumber}<br>
+  account Balance: ${usero.balance}<br>
 <br>
 <h4>Transaction history<h4>
 ${useor}
